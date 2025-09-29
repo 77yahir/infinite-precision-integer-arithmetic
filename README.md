@@ -73,9 +73,7 @@ Addition, multiplication, and exponentiation may be implemented iteratively (usi
 
 ## Submission and Grading
 
-// TODO add link
-
-You will download starter code for this project from GitHub classroom. The starter code just sets up the project for you to ensure that it can be autograded correctly. Most of the design is left up to you.
+[You will download starter code for this project from GitHub classroom.](https://classroom.github.com/a/MpvapKZc) The starter code just sets up the project for you to ensure that it can be autograded correctly. Most of the design is left up to you.
 
 * You should write tests for your program from the beginning. You are required to submit your own tests for your program. You are encouraged to seek help during office hours, though if your question is about a bug in your program, I will first ask to see your testing efforts so far.
 
