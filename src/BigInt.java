@@ -1,29 +1,78 @@
+import java.util.Arrays;
+import java.util.List;
+
 public class BigInt {
     private Node head;
 
     /**
-     * Constructor: Builds a BigInt from the string
+     * Constructor: Builds a BigInt from the string by using a linked list
+     * @param number
      */
 
     public BigInt(String number) {
-        // 1. Remove leading zeros
+
         number = number.replaceFirst("^0+(?!$)", "");
 
-        // 2. Loop through the string right to left
-        // 3. For each character, convert to int and create a Node
+        head = null;
 
-        Node myNode = new Node();
+        for (int i = 0; i < number.length(); i++) {
 
-        for (int i = number.length() - 1; i >= 0; i--) {
             char c = number.charAt(i);
-            int x = (int) c;
-            Node tempNode = new Node(x, );
+            int digit = c - '0';
+            Node tempNode = new Node(digit);
+            tempNode.setNext(head);
+            head = tempNode;
+        }
+    }
 
+    /**
+     * Copy Constructor
+     */
+
+    public BigInt(BigInt other) {
+        this.head = other.front();
+    }
+
+    /**
+     * Converts BigInt into its numerical value
+     * @return String form of BigInt number
+     */
+
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+
+        Node curr = head;
+        while (curr != null) {
+            result.append(curr.getDigit());
+            curr = curr.getNext();
         }
 
+        result.reverse();
+        return result.toString();
+    }
 
+    /**
+     * Finds the size of a BigInt
+     * @return The int value of the size of the BigInt
+     */
 
-        // 4. Link nodes so that the first node is head
+    public int size() {
+        int count = 0;
+
+        Node curr = head;
+        while (curr != null) {
+            count++;
+            curr = curr.getNext();
+        }
+        return count;
+    }
+
+    /**
+     * Returns the first Node of the BigInt
+     */
+
+    public Node front() {
+        return this.head;
     }
 
 }
