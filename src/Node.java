@@ -1,5 +1,5 @@
 public class Node {
-    private int digit;
+    private final int digit;
     private Node next;
 
     /**

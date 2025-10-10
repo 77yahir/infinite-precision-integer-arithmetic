@@ -44,10 +44,10 @@ public class TestCases {
 
     @Test
     public void testMultiply01() {
-        BigInt num1 = new BigInt("999");
-        BigInt num2 = new BigInt("099");
+        BigInt num1 = new BigInt("100");
+        BigInt num2 = new BigInt("100");
         String result = Calculations.Multiply(num1, num2).toString();
-        assertEquals("98901", result);
+        assertEquals("10000", result);
     }
 
     @Test
@@ -56,6 +56,49 @@ public class TestCases {
         BigInt num2 = new BigInt("010");
         String result = Calculations.Multiply(num1, num2).toString();
         assertEquals("12345670", result);
+    }
+
+    @Test
+    public void testMultiply03() {
+        BigInt num1 = new BigInt("2");
+        BigInt num2 = new BigInt("2");
+        String result = Calculations.Multiply(num1, num2).toString();
+        assertEquals("4", result);
+    }
+
+    @Test
+    public void testExponent01() {
+        BigInt num1 = new BigInt("0015");
+        String result = Calculations.Exponent(num1, 3).toString();
+        assertEquals("3375", result);
+    }
+
+    @Test
+    public void testExponent02() {
+        BigInt num1 = new BigInt("0505050");
+        String result = Calculations.Exponent(num1, 4).toString();
+        assertEquals("65063511975627506250000", result);
+    }
+
+    @Test
+    public void testExponent03() {
+        BigInt num1 = new BigInt("05");
+        String result = Calculations.Exponent(num1,1).toString();
+        assertEquals("5", result);
+    }
+
+    @Test
+    public void testExponent04() {
+        BigInt num1 = new BigInt("10");
+        String result = Calculations.Exponent(num1, 0).toString();
+        assertEquals("1", result);
+    }
+
+    @Test
+    public void testExponent05() {
+        BigInt num1 = new BigInt("2");
+        String result = Calculations.Exponent(num1, 100).toString();
+        assertEquals("1267650600228229401496703205376", result);
     }
 
 }

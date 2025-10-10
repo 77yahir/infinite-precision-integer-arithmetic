@@ -1,3 +1,5 @@
+import java.net.CacheRequest;
+
 public class Calculations {
     private BigInt num1;
     private BigInt num2;
@@ -13,6 +15,7 @@ public class Calculations {
 
     /**
      * Adds two BigInt classes returns the new resulting BigInt
+     *
      * @param num_1
      * @param num_2
      * @return The combined BigInt values
@@ -65,6 +68,7 @@ public class Calculations {
 
     /**
      * Multiplies two BigInt classes and returns the new resulting BigInt
+     *
      * @param num_1
      * @param num_2
      * @return The combined BigInt values
@@ -99,9 +103,8 @@ public class Calculations {
                 minor.append(carry);
             }
 
-            while (nZeros != 0){
-                minor.insert(0,0);
-                nZeros--;
+            for (int i = 0; i < nZeros; i++) {
+                minor.insert(0, 0);
             }
             nZeros++;
 
@@ -112,5 +115,28 @@ public class Calculations {
 
         }
         return total;
+    }
+
+    /**
+     * Raises a BigInt class to an int Exponent and returns the new resulting BigInt class
+     * @param num_1
+     * @param n
+     * @return The resulting BigInt
+     */
+    public static BigInt Exponent(BigInt num_1, int n) {
+        BigInt prod = new BigInt("1");
+        if (n == 0) {
+            return prod;
+        }
+        if (n == 1) {
+            return num_1;
+        }
+
+        int check = n % 2;
+        BigInt half = Exponent(num_1, n/2);
+        BigInt multiply = Multiply(half, half);
+        if (check == 0) return multiply;
+        else return Multiply(multiply, num_1);
+
     }
 }

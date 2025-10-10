@@ -26,14 +26,6 @@ public class BigInt {
     }
 
     /**
-     * Copy Constructor
-     */
-
-    public BigInt(BigInt other) {
-        this.head = other.front();
-    }
-
-    /**
      * Converts BigInt into its numerical value
      * @return String form of BigInt number
      */
