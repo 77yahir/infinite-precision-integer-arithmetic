@@ -123,6 +123,7 @@ public class Calculations {
      * @param n
      * @return The resulting BigInt
      */
+    
     public static BigInt Exponent(BigInt num_1, int n) {
         BigInt prod = new BigInt("1");
         if (n == 0) {
