@@ -1,17 +1,7 @@
 import java.net.CacheRequest;
 
 public class Calculations {
-    private BigInt num1;
-    private BigInt num2;
-
-    /**
-     * Constructor: Creates a Calculation class that holds 2 BigInt classes
-     */
-
-    public Calculations(BigInt num_1, BigInt num_2) {
-        this.num1 = num_1;
-        this.num2 = num_2;
-    }
+    private Calculations() {}
 
     /**
      * Adds two BigInt classes returns the new resulting BigInt
