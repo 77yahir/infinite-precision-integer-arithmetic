@@ -53,3 +53,16 @@ Test cases were created to verify:
    git clone https://github.com/yahirflores/infinite-precision-integer-arithmetic.git
 2. Open in **IntelliJ IDEA** (or any Java IDE).
 3. Run the `Main.java` file to test arithmetic operations.
+   
+---
+
+## Repository Info
+Author: Yahir Flores  
+Language: Java  
+IDE: IntelliJ IDEA  
+Status: In Progress (Version 1.0 - Core Operations Complete)
+
+---
+
+> This project was developed as part of a university assignment and refined to demonstrate problem-solving, algorithm design, and testing fundamentals.
+
