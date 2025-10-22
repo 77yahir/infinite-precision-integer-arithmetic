@@ -4,7 +4,7 @@ This Java project implements arithmetic operations (addition, subtraction, and m
 
 ---
 
-## 🚀 Features
+## Features
 
 - Handles integers of **any size** by using a custom linked-list representation
 - Performs **addition, subtraction, and multiplication** manually — no `BigInteger` library used.
@@ -13,7 +13,7 @@ This Java project implements arithmetic operations (addition, subtraction, and m
 
 ---
 
-## 🧠 Concepts Applied
+## Concepts Applied
 
 - Linked Lists and Node-based data structures  
 - Algorithm design for arithmetic operations  
@@ -23,7 +23,7 @@ This Java project implements arithmetic operations (addition, subtraction, and m
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Test cases were created to verify:
 - Correctness of arithmetic results  
@@ -37,7 +37,7 @@ Test cases were created to verify:
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 
 - How arithmetic operations actually work under the hood  
 - Designing and debugging algorithms for precision beyond native types  
