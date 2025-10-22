@@ -53,8 +53,3 @@ Test cases were created to verify:
    git clone https://github.com/yahirflores/infinite-precision-integer-arithmetic.git
 2. Open in **IntelliJ IDEA** (or any Java IDE).
 3. Run the `Main.java` file to test arithmetic operations.
-4. To run tests:
-   ```bash
-   mvn test
-   ```
-   _(or use IntelliJ's built-in test runner if not using Maven)_
