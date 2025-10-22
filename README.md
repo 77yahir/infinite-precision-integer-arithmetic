@@ -25,6 +25,9 @@ This Java project implements arithmetic operations (addition, subtraction, and m
 
 ## Testing
 
+The file `SampleTest_Provided.java` was included with the course starter code to demonstrate the use of JUnit.
+My own testing focused on unit-level validation of arithmetic methods.
+
 Test cases were created to verify:
 - Correctness of arithmetic results  
 - Edge cases (e.g., negative numbers, zero, very large values)  
