@@ -56,4 +56,5 @@ Test cases were created to verify:
 4. To run tests:
    ```bash
    mvn test
-_(or use IntelliJ's built-in test runner if not using Maven)_
+   ```
+   _(or use IntelliJ's built-in test runner if not using Maven)_
