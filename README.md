@@ -22,8 +22,6 @@ It was developed to explore how low-level number representations work under the 
 - Object-Oriented Programming (OOP) in Java  
 - Software testing and debugging  
 
----
-
 ## Testing
 
 The file **`SampleTest_Provided.java`** was included with the course starter code to demonstrate the use of JUnit.  
@@ -38,6 +36,13 @@ Custom test cases verify:
 - Java  
 - IntelliJ IDEA  
 - JUnit (for testing)
+
+---
+
+## Planned Improvements
+
+- Finish implementation of **negative integer support**  
+- Add **input validation** for invalid characters  
 
 ---
 
