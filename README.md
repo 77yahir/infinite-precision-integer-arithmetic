@@ -50,7 +50,7 @@ Custom test cases verify:
 
 ---
 
-## 🛠️ How to Run
+## How to Run
 
 1. **Clone the repository**
    ```bash
@@ -60,3 +60,15 @@ Custom test cases verify:
 3. **Run the program**
    - Open `Main.java`
    - Press **Run**
+
+---
+
+## Repository Info
+Author: Yahir Flores  
+Language: Java  
+IDE: IntelliJ IDEA  
+Status: In Progress (Version 1.0 - Core Operations Complete)
+
+---
+
+> This project was developed as part of a university assignment and refined to demonstrate problem-solving, algorithm design, and testing fundamentals.
